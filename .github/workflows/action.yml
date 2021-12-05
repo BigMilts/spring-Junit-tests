@@ -6,6 +6,7 @@ on:
   pull_request:
     branches: [ main ]
 
+jobs:
   runs:
     - name: Fast action
       uses: BigMilts/FAST@FAST_ACTION
