@@ -24,5 +24,6 @@ jobs:
         settings-path: ${{ github.workspace }} # location for the settings.xml file
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-    - name: Fast action
-      uses: BigMilts/FAST@FAST_ACTION
+    runs:
+      - name: Fast action
+        uses: BigMilts/FAST@FAST_ACTION
