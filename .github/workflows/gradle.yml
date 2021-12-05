@@ -13,10 +13,8 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
     - name: Fast action
       uses: BigMilts/FAST@FAST_ACTION
