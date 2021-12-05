@@ -1,12 +1,7 @@
-name: Action
+name: Maven Package
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
+on: push
 jobs:
-  runs:
+  fast:
     - name: Fast action
       uses: BigMilts/FAST@FAST_ACTION
