@@ -1,7 +1,6 @@
 name: Maven Package
 
 on: push
-jobs:
-  fast:
-    - name: Fast action
-      uses: BigMilts/FAST@FAST_ACTION
+
+  - name: Fast action
+    uses: BigMilts/FAST@FAST_ACTION
