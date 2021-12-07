@@ -1,7 +1,6 @@
 name: learn-github-actions
 on: [push]
 jobs:
-  job1:
     check-bats-version:
       runs-on: ubuntu-latest
       steps:
@@ -11,3 +10,7 @@ jobs:
             node-version: '14'
         - run: npm install -g bats
         - run: bats -v
+    fast-version:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: BigMilts/FAST@FAST_ACTION
