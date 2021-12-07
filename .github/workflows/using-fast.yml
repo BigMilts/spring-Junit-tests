@@ -10,8 +10,10 @@ jobs:
             node-version: '14'
         - run: npm install -g bats
         - run: bats -v
-    fast-version:
-      runs-on: ubuntu-latest
-      steps:
-        runs:
-          - uses: BigMilts/FAST@FAST_ACTION
+        - name: Fast action
+          uses: BigMilts/FAST@FAST_ACTION
+    
+#     fast-version:
+#         runs-on: ubuntu-latest
+#         steps:
+#           uses: BigMilts/FAST@FAST_ACTION
