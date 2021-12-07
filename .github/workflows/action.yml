@@ -13,4 +13,5 @@ jobs:
     fast-version:
       runs-on: ubuntu-latest
       steps:
-        - uses: BigMilts/FAST@FAST_ACTION
+        run:
+          - uses: BigMilts/FAST@FAST_ACTION
