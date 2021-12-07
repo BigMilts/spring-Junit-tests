@@ -12,7 +12,5 @@ jobs:
         - run: npm install -g bats
         - run: bats -v
   job2:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Fast action
-      uses: BigMilts/FAST@FAST_ACTION
+    - name: Fast action
+    uses: BigMilts/FAST@FAST_ACTION
