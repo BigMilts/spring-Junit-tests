@@ -7,5 +7,5 @@ jobs:
     name: A job to say hello
     steps:
       - name: Fast action
-        uses: BigMilts/FAST@FAST_ACTION4
+        uses: BigMilts/FAST@FAST_ACTION5
        
