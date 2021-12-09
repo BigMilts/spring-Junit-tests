@@ -10,10 +10,9 @@ jobs:
             node-version: '14'
         - run: npm install -g bats
         - run: bats -v
-        - name: SonarCloud Scan
-          uses: SonarSource/sonarcloud-github-action@v1.6
-    
-#     fast-version:
-#         runs-on: ubuntu-latest
-#         steps:
-#           uses: BigMilts/FAST@FAST_ACTION
+    fast-version:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Fast action
+        uses: BigMilts/FAST@FAST_ACTION2
+  
