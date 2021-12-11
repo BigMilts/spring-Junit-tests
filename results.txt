@@ -1,0 +1,4 @@
+src/test/java/one/digitalinnovation/beerstock/service/BeerServiceTest.java
+src/test/java/one/digitalinnovation/beerstock/BeerstockApplicationTests.java
+src/test/java/one/digitalinnovation/beerstock/controller/BeerControllerTest.java
+
