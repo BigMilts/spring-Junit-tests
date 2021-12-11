@@ -11,5 +11,26 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
+  
+  private_fast_action:
+    runs-on: ubuntu-latest
+    name: Setup
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: RUN FAST
+        run: python script/prioritize.py > results.txt
+      - name: Setup git
+        run: |
+          git config user.name "FAST ACTION"
+          git config user.email "<>"
+      - name: Commit
+        run: |
+          git add results.txt
+          git commit -m "persisting test data"
+          git push origin main
        
 #https://github.com/STAR-RG/shaker
